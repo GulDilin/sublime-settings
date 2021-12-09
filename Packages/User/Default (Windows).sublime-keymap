@@ -1,0 +1,11 @@
+[
+    {
+        "keys": ["ctrl+1"], "command": "goto_css_declaration",
+        "args": {"goto": "next"}
+    },
+    { "keys": ["ctrl+alt+l"], "command": "reindent", "args": { "single_line": false } },
+    { "keys": ["ctrl+alt+a"], "command": "toggle_side_bar" },
+    { "keys": ["ctrl+alt+i"], "command": "sublime_linter_lint" },
+    { "keys": ["ctrl+alt+k"], "command": "sublime_linter_panel_toggle" },
+
+]
