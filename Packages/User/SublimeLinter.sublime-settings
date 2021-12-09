@@ -1,0 +1,24 @@
+// SublimeLinter Settings - User
+{
+    "debug": true,
+    "lint_mode": "manual",
+    "linters": {
+        "pylint": {
+            "executable": "pylint",
+            "python": "C:\\Python38\\python.exe",
+            "selector": "source.python"
+        },
+        "clang": {
+            "args": "-Werror -Wall",
+        },
+        "clang++": {
+            "args": "-Werror -Wall"
+        }
+    },
+
+    "paths": {
+        "windows": [
+            "C:\\Python38\\Lib\\site-packages\\pylint"
+        ]
+    },
+}

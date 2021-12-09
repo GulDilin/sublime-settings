@@ -1,0 +1,5 @@
+{
+    "highlight_style": "fill",
+    "error_filter": "\\d-\\d-\\d \\d:\\d:\\d * ERROR|exception",
+    "warning_filter": "WARNING",
+}

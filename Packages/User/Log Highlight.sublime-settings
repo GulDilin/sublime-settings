@@ -1,0 +1,75 @@
+{
+
+    /*  Configuration  ____________________________________________
+    */
+
+    // enable context menu
+    "context_menu": true,
+
+    // Auto Highlight for a log file, build window
+    "auto_highlight" : true,
+
+    // Output panel list for Auto Highlight
+    "auto_highlight_output_panel": [], // exec = build
+
+    /*  log list  _________________________________________________
+    */
+
+    "log_list" : {
+
+        "python" : // specify name as yours
+        {
+            "type"         : "compile", // "compile" - link, bookmark (icon) are usable, "system" - only for highlight
+            "extension"    : [ "*.log" ],
+            "output.panel" : [ "exec" ], // exec - to apply to build results
+            "use_link"     : true,
+            "search_base": {
+                "enable"        : false, // false : when using absolute path
+                "ignore_dir"    : [""], // hidden folders are ignored as default, like .git, .svn
+                "max_scan_path" : 1000,
+            },
+            "bookmark" : {
+                "enable"     : true, // false : do not display icons too
+                "goto_error" : true, // automatically goto 1st error line
+            },
+            "severity" :
+            {
+                "error" : { // specify name as yours
+                    "enable"  : true,
+                    "pattern" : [ // [ "begin regex", "end regex" ] or [ "match regex", "" ]
+                        // examples
+                        [ "\\d+:\\d+:\\d+\\s\\|\\sERROR", "^\\d+-\\d+-\\d+"]
+                        // <-- remove, change, add more patterns here -->
+                    ],
+                    "color" : { // ["foreground", "background"]
+                        "base"  : ["orangered", ""], // error message
+                        "link"  : ["navajowhite", ""], // link in error message
+                        "quote" : ["deepskyblue", ""], // quote in error message
+                    },
+                    "icon"  : "dot", // remove "icon" not to use icon, "dot", "circle" "bookmark" are possible
+                },
+                "warning" : { // specify name as yours
+                    "enable"  : true,
+                    "pattern" : [
+                        // examples
+                        [ "\\d+:\\d+:\\d+\\s\\|\\sWARNING", "^\\d+-\\d+-\\d+"]
+                    ],
+                    "color" : {
+                        "base"  : ["darkorange", ""],
+                        "link"  : ["navajowhite", ""],
+                        "quote" : ["royalblue", ""],
+                    },
+                    "icon"  : "dot",
+                },
+            },
+            "theme": {
+                "foreground"      : "#D7D7D7",
+                "caret"           : "#F29718",
+                "selection"       : "#3A5166",
+                "selectionBorder" : "#181E26",
+                "lineHighlight"   : "#283240",
+            }
+        },
+        // <-- remove, change, add more log list here -->
+    },
+}
