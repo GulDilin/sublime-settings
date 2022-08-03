@@ -4,6 +4,7 @@
 	"theme": "auto",
 	"font_face": "JetBrains Mono",
 	"preview_on_click": false,
+	"word_wrap": false,
 	"translate_tabs_to_spaces": true,
 	"default_line_ending": "unix",
 	"ignored_packages":
@@ -33,4 +34,5 @@
 	],
 	"font_size": 10,
 	"color_scheme": "auto",
+	"indent_guide_options": ["draw_normal", "solid", "draw_active_single"],
 }

@@ -3,22 +3,30 @@
     "debug": true,
     "lint_mode": "manual",
     "linters": {
-        "pylint": {
-            "executable": "pylint",
-            "python": "C:\\Python38\\python.exe",
-            "selector": "source.python"
+        "flake8": {
+            "executable": ["py", "-m", "flake8"],
+            "python": "C:\\Program Files\\Python39\\python.exe",
+            "selector": "source.python",
+            "lint_mode": "save",
         },
         "clang": {
             "args": "-Werror -Wall",
         },
         "clang++": {
             "args": "-Werror -Wall"
+        },
+        "eslint": {
+            "lint_mode": "save",
         }
     },
 
+    "show_panel_on_save": "window",
+
+    "lint_mode": "save",
+
     "paths": {
         "windows": [
-            "C:\\Python38\\Lib\\site-packages\\pylint"
+            "C:\\Program Files\\Python39\\Lib\\site-packages\\pylint"
         ]
     },
 }

@@ -7,5 +7,9 @@
     { "keys": ["ctrl+alt+a"], "command": "toggle_side_bar" },
     { "keys": ["ctrl+alt+i"], "command": "sublime_linter_lint" },
     { "keys": ["ctrl+alt+k"], "command": "sublime_linter_panel_toggle" },
-
+    { "keys": ["ctrl+alt+k"], "command": "sublime_linter_panel_toggle" },
+    { "keys": ["alt+up"], "command": "move_amount", "args": {"by": "lines", "amount": 10, "forward": false} },
+    { "keys": ["alt+down"], "command": "move_amount", "args": {"by": "lines", "amount": 10, "forward": true} },
+    { "keys": ["shift+alt+up"], "command": "move_amount", "args": {"by": "lines", "amount": 10, "forward": false, "extend": true} },
+    { "keys": ["shift+alt+down"], "command": "move_amount", "args": {"by": "lines", "amount": 10, "forward": true, "extend": true} },
 ]
