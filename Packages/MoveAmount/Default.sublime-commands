@@ -1,0 +1,6 @@
+[{
+  "id": "moveamount",
+  "caption": "MoveAmount",
+  "command": "move_amount",
+  "args": { "forward": true, "amount": 2, "extend": false, "by": "lines" }
+}]
