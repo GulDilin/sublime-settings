@@ -1,13 +1,17 @@
 // SublimeLinter Settings - User
 {
     "debug": true,
-    "lint_mode": "manual",
     "linters": {
         "flake8": {
             "executable": ["py", "-m", "flake8"],
-            "python": "C:\\Program Files\\Python39\\python.exe",
+            "python": "C:\\Python310\\python.exe",
             "selector": "source.python",
-            "lint_mode": "save",
+            "lint_mode": "load_save",
+        },
+        "mypy": {
+            "lint_mode": "load_save",
+            "selector": "source.python",
+            "python": "C:\\Users\\user\\AppData\\Local\\pypoetry\\Cache\\virtualenvs\\luxoft-tap-server-tl7FxM1x-py3.10\\Scripts\\python.exe",
         },
         "clang": {
             "args": "-Werror -Wall",

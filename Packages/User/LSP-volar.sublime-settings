@@ -1,0 +1,10 @@
+// Settings in here override those in "LSP-volar/LSP-volar.sublime-settings"
+
+{
+    "settings": {
+        "volar.autoWrapParentheses": false,
+        "volar.autoCompleteRefs": false,
+        "volar.diagnostics.delay": 0,
+        "javascript.inlayHints.enumMemberValues.enabled": true,
+    }
+}
