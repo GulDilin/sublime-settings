@@ -18,10 +18,12 @@
 	"adaptive_dividers": true,
 	"ignored_packages":
 	[
+		"DocBlockr",
 		"JavaScript Completions",
 		"LSP-eslint",
 		"LSP-vue",
 		"SublimeCodeIntel",
+		"tern_for_sublime",
 		"Vintage",
 	],
 	"font_size": 11,
